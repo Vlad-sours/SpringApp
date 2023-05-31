@@ -56,15 +56,47 @@
 		F540B8562A27565B001F06DE /* SpringApp */ = {
 			isa = PBXGroup;
 			children = (
-				F540B8572A27565B001F06DE /* AppDelegate.swift */,
-				F540B8592A27565B001F06DE /* SceneDelegate.swift */,
-				F540B85B2A27565B001F06DE /* ViewController.swift */,
-				F540B85D2A27565B001F06DE /* Main.storyboard */,
-				F540B8602A27565D001F06DE /* Assets.xcassets */,
-				F540B8622A27565D001F06DE /* LaunchScreen.storyboard */,
-				F540B8652A27565D001F06DE /* Info.plist */,
+				F540B86B2A275673001F06DE /* App */,
+				F540B86C2A275688001F06DE /* ViewControllers */,
+				F540B86D2A2756D7001F06DE /* Storyboards */,
+				F540B86E2A2756E9001F06DE /* Resourses */,
 			);
 			path = SpringApp;
+			sourceTree = "<group>";
+		};
+		F540B86B2A275673001F06DE /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F540B8572A27565B001F06DE /* AppDelegate.swift */,
+				F540B8592A27565B001F06DE /* SceneDelegate.swift */,
+				F540B8652A27565D001F06DE /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		F540B86C2A275688001F06DE /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F540B85B2A27565B001F06DE /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F540B86D2A2756D7001F06DE /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				F540B85D2A27565B001F06DE /* Main.storyboard */,
+				F540B8622A27565D001F06DE /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		F540B86E2A2756E9001F06DE /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+				F540B8602A27565D001F06DE /* Assets.xcassets */,
+			);
+			path = Resourses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -302,9 +334,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = none.SpringApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -330,9 +365,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = none.SpringApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
