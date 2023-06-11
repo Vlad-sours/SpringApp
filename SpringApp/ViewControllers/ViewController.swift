@@ -34,8 +34,8 @@ final class ViewController: UIViewController {
         animationView.curve = animation.curve
         animationView.animate()
         
-        sender.setTitle("Run \(animation.name)", for: .normal)
         animation = Animation.getRandomAnimation()
+        sender.setTitle("Run \(animation.name)", for: .normal)
     }
 }
 
