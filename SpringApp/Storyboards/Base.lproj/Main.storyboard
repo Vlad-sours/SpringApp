@@ -16,11 +16,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hGx-SH-hzw">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hGx-SH-hzw" customClass="SpringView" customModule="SpringAnimation">
                                 <rect key="frame" x="77" y="143" width="239" height="128"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gkX-Hw-qG6">
-                                        <rect key="frame" x="8" y="23" width="223" height="20.333333333333329"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gkX-Hw-qG6">
+                                        <rect key="frame" x="8" y="5" width="223" height="20.333333333333332"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -29,14 +29,20 @@
                                 <color key="backgroundColor" systemColor="systemBlueColor"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="gkX-Hw-qG6" secondAttribute="trailing" constant="8" id="6cS-i4-V87"/>
-                                    <constraint firstItem="gkX-Hw-qG6" firstAttribute="top" secondItem="hGx-SH-hzw" secondAttribute="top" constant="23" id="Rsj-6g-UAq"/>
+                                    <constraint firstItem="gkX-Hw-qG6" firstAttribute="top" secondItem="hGx-SH-hzw" secondAttribute="top" constant="5" id="Rsj-6g-UAq"/>
                                     <constraint firstItem="gkX-Hw-qG6" firstAttribute="leading" secondItem="hGx-SH-hzw" secondAttribute="leading" constant="8" id="g10-jd-MEB"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DS9-Kr-iB7">
                                 <rect key="frame" x="77" y="721" width="239" height="35"/>
+                                <color key="backgroundColor" red="0.020312407985329628" green="0.35436886548995972" blue="0.98047584295272827" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Run">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="animationButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1JI-oa-vQc"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -51,6 +57,10 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hGx-SH-hzw" secondAttribute="trailing" constant="77" id="k7q-rG-wjK"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="animationLabel" destination="gkX-Hw-qG6" id="ag7-Qf-vj5"/>
+                        <outlet property="animationView" destination="hGx-SH-hzw" id="FPf-n6-Hyc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
